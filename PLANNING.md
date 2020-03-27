@@ -23,3 +23,5 @@ Authentication Features
  - Password Digest
  - Has secure password
 
+To do
+  - Strict users validations
