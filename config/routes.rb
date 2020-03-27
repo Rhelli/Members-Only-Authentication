@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  
-  get 'static_pages/home'
-  get 'static_pages/about'
+
+  root 'members_only#home'
+  get '/about', to: 'members_only#about'
+
 end
