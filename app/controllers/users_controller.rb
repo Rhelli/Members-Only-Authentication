@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
-  before_action: 
+
   def index
+    @user
   end
 
   def show
