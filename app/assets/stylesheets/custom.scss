@@ -1,10 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic);
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
 body {
   padding: 50px 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 section {
@@ -30,7 +30,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 2em;
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
@@ -39,14 +39,14 @@ h2 {
 }
 
 h3 {
-  font-size: 1.1em;
+  font-size: 1.5em;
   line-height: 1.7em;
+  font-weight: 300;
 }
 
 #logo {
   float: left;
   margin-right: 10px;
-  font-family: 'Montserrat', sans-serif;
   font-size: 1.7em;
   color: #fff;
   text-transform: uppercase;
@@ -54,8 +54,9 @@ h3 {
   padding-top: 9px;
   font-weight: bold;
   &:hover {
-    color: #fff;
+    color: #feb72b;
     text-decoration: none;
+    transition-duration: 0.35s;
   }
 }
 
@@ -65,5 +66,54 @@ header {
   }
   .navbar-right {
     margin-right: 30px;
+  }
+}
+
+/* Home Page Subtitle ----------------------- */
+.home-jumbotron {
+  background-color: #fcf8e8;
+}
+
+.home-subtitle h2 {
+  display: block;
+  text-align: center;
+  margin: 40px 0px 10px 0;
+}
+
+.signup-btn {
+  width: 200px;
+  height: auto;
+  background-color: #f64b3c;
+  border-color: #c81912;
+  color: #dcdcdc;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 23px;
+  font-weight: 500;
+  &:hover {
+    background-color: #B9382D;
+    border: 1px solid white;
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    transition-duration: 0.20s;
+  }
+}
+
+/* Sitewide Nav ------------------------------ */
+.sitewide-nav {
+  background-color: #899857;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  a {
+    color: white;
+    &:hover {
+      text-decoration: underline;
+      background-color: transparent !important;
+      color: #feb72b;
+      transition-duration: 0.35s;
+    }
   }
 }
