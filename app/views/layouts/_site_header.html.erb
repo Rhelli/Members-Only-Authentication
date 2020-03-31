@@ -4,12 +4,11 @@
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to 'Home', root_path %></li>
-        <li><%= link_to 'Log In', '#' %></li>
         <% if logged_in? %>
           <li><%= link_to "Posts", '#' %></li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> My Profile <b class="caret"></b></a>
-            <ul>
+            <a href="#" class="dropdown-toggle profile-dropdown" data-toggle="dropdown"> My Profile <b class="caret"></b></a>
+            <ul class="dropdown-menu">
               <li><%= link_to "Profile", current_user %></li>
               <li class="divider"></li>
               <li><%= link_to "Log out", logout_path, method: :delete %></li>
