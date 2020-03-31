@@ -9,8 +9,10 @@
 }
 
 body {
-  padding: 50px 10px;
+  margin-top: 30px;
+  padding: 30px 10px;
   font-family: 'Open Sans', sans-serif;
+  background-color: #dcdcdc;
 }
 
 section {
@@ -107,12 +109,13 @@ header {
 
 /* Sitewide Nav ------------------------------ */
 .sitewide-nav {
-  background-color: #899857;
-  font-size: 15px;
-  font-weight: 600;
+  background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   text-decoration: none;
+  -webkit-box-shadow: inset 0px -2px 8px 2px rgba(5,53,74,1);
+  -moz-box-shadow: inset 0px -2px 8px 2px rgba(5,53,74,1);
+  box-shadow: inset 0px -2px 8px 2px rgba(5,53,74,1);
   a {
     color: white;
     &:hover {
@@ -153,4 +156,84 @@ input, textarea, select {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+/* User Profile Page And Gravatar ------------------------- */
+.profile-container {
+  section.user_info {
+    margin-top: 20px;
+  }
+  section {
+    padding: 10px 0;
+    margin-top: 20px;
+
+    .profile-gravatar {
+      border-radius: 25%;
+    }
+
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+    span {
+      display: block;
+      margin-bottom: 3px;
+      line-height: 1;
+    }
+    h1 {
+      font-size: 1.4em;
+      text-align: left;
+      letter-spacing: -1px;
+      margin: 0 auto 3px auto;
+    }
+    h2 {
+      font-family: 'Open Sans', sans-serif;
+      text-align: left;
+      padding-left: 260px;
+      margin: 10px 0 10px 0;
+    }
+  }
+}
+
+.user-name {
+  font-size: 2.6em;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-shadow: 2px 1px 2px rgba(96,96,96,0.86);
+}
+.user-email {
+  font-size: 1.65em;
+  color: #dcdcdc;
+  font-weight: 400;
+  text-shadow: 2px 1px 2px rgba(127,127,127,0.86);
+}
+
+.gravatar-container {
+  height: 234px;
+  padding: 10px 20px;
+  background-image: image-url("default-header.jpg");
+  border-radius: 7px;
+  -webkit-box-shadow: 2px 2px 6px -1px rgba(64,64,64,1);
+  -moz-box-shadow: 2px 2px 6px -1px rgba(64,64,64,1);
+  box-shadow: 2px 2px 6px -1px rgba(64,64,64,1);
+  div {
+    width: 200px !important;
+    padding: 0 !important;
+    margin: 0 0 0 20px !important;
+  }
+}
+
+.gravatar {
+  float: left;
+  border-radius: 50%;
+  border: 6px solid #dcdcdc;
+  -webkit-box-shadow: 1px 1px 8px -1px rgba(64,64,64,1);
+  -moz-box-shadow: 1px 1px 8px -1px rgba(64,64,64,1);
+  box-shadow: 1px 1px 8px -1px rgba(64,64,64,1);
+}
+
+.gravatar_edit {
+  margin-top: 15px;
 }
