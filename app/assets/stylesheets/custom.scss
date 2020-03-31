@@ -127,6 +127,10 @@ header {
   }
 }
 
+.profile-dropdown:focus {
+  background-color: transparent !important;
+}
+
 /** Form**/
 
 input, textarea, select {
