@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    @user = User.find(params[:id])
   end
 
   def new
@@ -15,7 +16,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
     # @user.send_activation_email
-    flash[:success] = 'Sign up was successfully done'
+    flash[:success] = 'You signed up successfully'
     redirect_to @user
     else
     render 'new'
