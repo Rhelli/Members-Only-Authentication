@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  before_action :current_user, only: [:new, :create]
+
 include SessionsHelper
 
   def index

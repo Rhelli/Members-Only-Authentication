@@ -1,5 +1,8 @@
-<h1>All Posts</h1>
+<% if !logged_in? %>
+  <%= render 'shared/welcome' %>
+<% end %>
 
+<h1>All Posts</h1>
 <ul>
   <% @posts.each do |post| %>
     <li>
