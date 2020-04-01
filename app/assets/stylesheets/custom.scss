@@ -162,6 +162,23 @@ input, textarea, select {
   }
 }
 
+.checkbox {
+  margin-top: 0;
+  margin-bottom: 15px;
+  transform: scale(1.2);
+  margin-left: 55px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
+  margin-top: -8px;
+}
+
 /* User Profile Page And Gravatar ------------------------- */
 .profile-container {
   section.user_info {
@@ -260,3 +277,5 @@ input, textarea, select {
   margin-top: 10px;
   font-size: 16px;
 }
+
+
