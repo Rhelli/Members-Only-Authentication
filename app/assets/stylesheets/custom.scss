@@ -290,6 +290,70 @@ input, textarea, select {
 }
 
 /* User Index ------------------------------- */
+.user-index-container {
+  background-color: #dcdcdc;
+}
 
+.user-index-list {
+  background-image: image-url('user-index-background.jpg');
+  border-radius: 5px;
+  border: 3px solid #2E64BB;
+  margin: 15px 0;
+  height: 120px;
+  transition-duration: 0.1s;
+  -webkit-box-shadow: 2px 2px 21px -9px rgba(0,2,92,1);
+  -moz-box-shadow: 2px 2px 21px -9px rgba(0,2,92,1);
+  box-shadow: 2px 2px 21px -9px rgba(0,2,92,1);
+  &:hover {
+    transform: scale(1.01);
+    transition-duration: 0.2s;
+    -webkit-box-shadow: 2px 2px 18px -9px rgba(0,2,92,1);
+    -moz-box-shadow: 2px 2px 18px -9px rgba(0,2,92,1);
+    box-shadow: 2px 2px 18px -9px rgba(0,2,92,1);
+    z-index: 3;
+  }
+}
+
+.gravatar-aside {
+  margin: 10px 10px 10px 20px;
+}
+
+.user-index-info {
+  padding: 20px 0;
+  margin-left: 150px;
+
+  div {
+    display: inline-block !important;
+  }
+
+  div:first-child a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+  }
+
+  div:last-child a {
+    color: #dcdcdc;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    padding-left: 10px;
+    &:before {
+      content: '|';
+      color: white;
+      padding-right: 10px;
+    }
+  }
+}
+
+.user-index-info > div a:hover {
+  color: #feb72b;
+  transition-duration: 0.2s;
+}
 
 
