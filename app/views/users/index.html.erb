@@ -1,0 +1,11 @@
+<h1>All Users</h1>
+<div class="container">
+  <ul>
+    <% @users.each do |user| %>
+      <li class="list-unstyled">
+        <%= gravatar_for user, size: 80, class: 'gravatr-aside' %>
+        <%= link_to user.name %>
+      </li>
+    <% end %>
+  </ul>
+</div>

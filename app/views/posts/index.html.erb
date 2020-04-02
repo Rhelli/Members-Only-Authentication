@@ -6,7 +6,10 @@
 <ul>
   <% @posts.each do |post| %>
     <li>
-      <%= link_to post.title, post_path(post) %>
+      <%= link_to post.title, post_path(post) %> 
+      <% if logged_in? %>
+        <%= link_to post.user.name, post_path(post) %>
+      <% end %>
     </li>
   <% end %>
   </ul>

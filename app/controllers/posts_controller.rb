@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :current_user, only: [:new, :create]
+  before_action :logged_in_user, only: [:new, :create]
 
 include SessionsHelper
 
@@ -31,4 +31,10 @@ include SessionsHelper
     params.require(:post).permit(:title, :body)
   end
 
+  def logged_in_user
+    unless logged_in?
+      flash[:danger] = 'You must be logged in to do that.'
+      redirect_to login_url
+    end
+  end
 end
