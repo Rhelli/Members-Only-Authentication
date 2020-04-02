@@ -36,11 +36,11 @@ In this project, we build a simple, exclusive social media type site where only 
 
 ## 🎯 The Project Brief
 
-The specifications and the guide to the project can be found The Odin Project's ['Project 2: Members Only!'](https://www.theodinproject.com/courses/ruby-on-rails/lessons/authentication) page.
+The specifications and the guides to the project can be found The Odin Project's [Project 2: Members Only!](https://www.theodinproject.com/courses/ruby-on-rails/lessons/authentication) page.
 
-This project focuses heavily on authentication in web apps. Specifically, in this project we are given the task to create our own authentication system versus using pre-existing authentication solutions such as ['Devise'](https://github.com/heartcombo/devise). This proves to be an invaluable lesson in understanding exactly how authentication systems work under the hood.
+This project focuses heavily on authentication in web apps. Specifically, in this project we are given the task to create our own authentication system versus using pre-existing authentication solutions such as [Devise](https://github.com/heartcombo/devise). This proves to be an invaluable lesson in understanding exactly how authentication systems work under the hood.
 
-The authentication systems implemented into this project includes:
+The authentication systems implemented into this project include:
   - User authentication - Password encryption and password digest storage to avoid storing raw user passwords
   - Cookies - Session and remember me cookies for perpetuation of user authentication
   - Before filters preventing unauthorised users from performing higher level actions like seeing who created which posts
@@ -59,11 +59,11 @@ Furthermore, the use of cookies allow us to dynamically serve different content 
 
 ### Setup
 In order to get this webpage up and running, you may have to do a little set up first.
-  1. Make sure you have both ['Ruby'](https://www.ruby-lang.org/en/documentation/installation/) and Ruby on Rails (['Mac'](https://gorails.com/setup/osx/10.15-catalina) • ['Linux'](https://gorails.com/setup/ubuntu/19.10) • ['Windows'](https://gorails.com/setup/windows/10)) installed.
+  1. Make sure you have both [Ruby](https://www.ruby-lang.org/en/documentation/installation/) and Ruby on Rails ([Mac](https://gorails.com/setup/osx/10.15-catalina) • [Linux](https://gorails.com/setup/ubuntu/19.10) • [Windows](https://gorails.com/setup/windows/10)) installed.
   2. Download this repo!
-  3. `cd` into the root directory of wherever you download this repo. ['What does 'cd' mean?'](https://www.macworld.com/article/2042378/master-the-command-line-navigating-files-and-folders.html)
+  3. `cd` into the root directory of wherever you download this repo. [What does 'cd' mean?](https://www.macworld.com/article/2042378/master-the-command-line-navigating-files-and-folders.html)
   4. In your terminal window, enter `rails server` to start the server.
-  5. Now navigate to ['localhost:4000'](localhost:4000) in your browser to start playing with the webpage!
+  5. Now navigate to [localhost:4000](localhost:4000) in your browser to start playing with the webpages!
 
 ## 🕺🏽 Contributions, Issues & Forking
 
