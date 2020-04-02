@@ -13,23 +13,19 @@ In this project, we build a simple, exclusive social media type site where only 
 
 > The Home page (post index) and the signing in process, redirecting back to the currently signed in user's profile page.
 
-
-
+******
 
 <a href="Previews/incorrect_signin.gif" target="_blank"> <img alt="Incorrect Sign ins" src="Previews/incorrect_signin.gif"/></a>
 
 > Strong params are enabled site-wide and validations here prevent the user from attempting a sign-in with an incorrect email address.
 
-
-
-
+*******
 
 <a href="Previews/navbar_changes.gif" target="_blank"> <img alt="Navbar Changes" src="Previews/navbar_changes.gif"/></a>
 
 > Different content is served to the user depending on their authenticated status. Users who are signed in are able to create posts and see who made them. Those that aren't can only read posts, without seeing the authors.
 
-
-
+******
 
 <a href="Previews/new_post_creation.gif" target="_blank"> <img alt="New Posts" src="Previews/new_post_creation.gif"/></a>
 
