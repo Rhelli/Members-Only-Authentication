@@ -1,24 +1,4 @@
 <h1>User Profile</h1>
 <div class="row">
-  <aside class="col-12 profile-container">
-    <section class="user_info">
-      <div class="gravatar-container w-100 d-flex flex-row justify-content-start">
-        <div>
-          <%= gravatar_for @user %>
-        </div>
-        <ul class="list-unstyled">
-          <li>
-            <h2 class="user-name">
-              <%= @user.name %>
-            </h2>
-          </li>
-          <li>
-            <h2 class="user-email">  
-              <%= @user.email %>
-            </h2>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </aside>
+  <%= render 'shared/user_profile'%>
 </div

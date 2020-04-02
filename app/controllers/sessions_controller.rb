@@ -9,7 +9,8 @@ class SessionsController < ApplicationController
       log_in user
       params[:session][:remember_me] == '1' ? remember(user) : forget(user)
       remember user
-      redirect_to user
+      flash[:success] = 'You have been logged in.'
+      redirect_to root_url
     else
       flash.now[:danger] = "Invalid email/password combination"
       render 'new'
@@ -18,6 +19,7 @@ class SessionsController < ApplicationController
 
   def destroy
     log_out if logged_in?
+    flash[:success] = "You have been logged out."
     redirect_to root_url
   end
 
