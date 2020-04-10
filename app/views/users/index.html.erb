@@ -1,0 +1,20 @@
+<h1 class="text-left user-index-page-title">All Users</h1>
+  <ul class='container user-index-container'>
+    <% @users.each do |user| %>
+      <li class="list-unstyled row user-index-list">
+        <div class="user-index-profile">
+          <div class='gravatar-aside'>
+            <%= gravatar_for user, size: 80, class: 'gravatar-aside' %>
+          </div>
+          <div class="user-index-info d-flex row ">
+            <div>
+              <%= link_to user.name %>
+            </div>
+            <div>
+              <%= link_to user.email%>
+            </div>
+          </div>
+        </div>
+      </li>
+    <% end %>
+  </ul>

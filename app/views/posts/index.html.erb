@@ -1,0 +1,31 @@
+<% if !logged_in? %>
+  <%= render 'shared/welcome' %>
+<% end %>
+
+<h1 class="text-left post-index-page-title">All Posts</h1>
+<div class="new-post-button">
+  <%= link_to 'Create a new post', new_post_path, class: 'btn btn-primary' %>
+</div>
+<div class="container">
+  <ul>
+    <% @posts.each do |post| %>
+      <li class="list-unstyled post-index-list row">
+        <div class='post-index-container d-flex flex-row'>
+          <div class="post-title-time">
+            <div class="post-index-title">
+              <%= link_to post.title, post_path(post) %>
+            </div>
+            <div class="post-time">
+              Posted <%= distance_of_time_in_words(post.user.created_at, post.created_at)%> ago.
+            </div>
+          </div>
+          <div class="post-index-author">
+            <% if logged_in? %>
+              by <%= link_to post.user.name, post_path(post) %>
+            <% end %>
+          </div>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+</div>
