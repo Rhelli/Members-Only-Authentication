@@ -32,7 +32,7 @@ In this project, we build a simple, exclusive social media type site where only 
 > Before filters in action - Users are required to sign in before attempting to create a post. Flash messages notify the user of successful (and unsuccessful) actions.
 </p>
 
-*******
+********
 
 ## 🎯 The Project Brief
 
